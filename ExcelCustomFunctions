@@ -1,0 +1,7 @@
+
+//Returns the cell reference of a cell 
+//=fnCELLREF(ref) 
+//ref - cell reference
+//eg =fnCELLREF(A1) 
+fnCELLREF(Ref)
+=LAMBDA(ref,SUBSTITUTE(CELL("address",ref),"$",""))
